@@ -8,17 +8,17 @@
 "Balcony cocktails and Bellagio fountains":{note:"Relax on the Cosmopolitan balcony with drinks bought nearby. Times are flexible depending on airport arrival and check-in."},
 "Walk to In-N-Out Burger":{logo:"innout",note:"New BLVD location on the Strip. Walk from the Cosmopolitan after check-in."},
 "Flamingo check-out":{logo:"flamingo",note:"Check-out by 11:00 AM on Saturday 28 November."},
-"Breakfast at Eggslut":{wordmark:"eggslut",note:"Eggslut is inside the Cosmopolitan. Walk-in breakfast; queues may vary."},
+"Breakfast at Eggslut":{logo:"eggslutofficial",note:"Eggslut is inside the Cosmopolitan. Walk-in breakfast; queues may vary."},
 "Breakfast at Bouchon Bakery (tentative)":{wordmark:"BOUCHON BAKERY",note:"Confirmed bakery choice at The Venetian. Breakfast timing is a plan, not a reservation."},
 "Sephora shopping for Gillian":{wordmark:"SEPHORA",note:"Fashion Show Mall location, closed on Thanksgiving Thursday but open Friday from 9 AM."},
 "Unused Eggslut entry":{logo:"eggslut",note:"Eggslut is inside the Cosmopolitan. Walk-in breakfast; queues may vary."},
-"Visit the Mob Museum":{wordmark:"THE MOB MUSEUM",note:"Plan for around two hours. Museum admission not yet booked."},
-"Explore Fremont Street Experience":{wordmark:"FREMONT STREET",note:"Best enjoyed after dark, with the Viva Vision canopy and downtown atmosphere."},
+"Visit the Mob Museum":{logo:"mobofficial",note:"Plan for around two hours. Museum admission not yet booked."},
+"Explore Fremont Street Experience":{note:"Best enjoyed after dark, with the Viva Vision canopy and downtown atmosphere."},
 "Sphere doors open":{photo:true,note:"Doors open at 7:00 PM. Eagles show begins at 8:30 PM."},
 "Eagles concert begins":{photo:true,note:"Eagles live at Sphere · 8:30 PM start. Finish time not confirmed."},
 "CHICA dinner reservation":{logo:"chica",note:"Confirmed for 2 guests at 11:15 PM on Friday 27 November, at CHICA in The Venetian. Dessert to look out for: The Flaming Skull — a dramatic melting chocolate skull with warm lava cake, horchata ice cream and corn marshmallows. Listed at $38 on the restaurant dessert menu; check current availability.",menu:true}
 };
-const logos={aer:"https://commons.wikimedia.org/wiki/Special:FilePath/Aer_Lingus_logo.svg",cosmo:"https://commons.wikimedia.org/wiki/Special:FilePath/Cosmopolitan_of_Las_Vegas_logo.svg",flamingo:"https://commons.wikimedia.org/wiki/Special:FilePath/FlamingoLogo.svg",innout:"https://commons.wikimedia.org/wiki/Special:FilePath/InNOut_2021_logo.svg",mob:"https://commons.wikimedia.org/wiki/Special:FilePath/The_Mob_Museum_logo.svg",fremont:"https://commons.wikimedia.org/wiki/Special:FilePath/Fremont_Street_Experience_logo.svg",eggslut:"https://commons.wikimedia.org/wiki/Special:FilePath/Eggslut_logo.svg"};
+const logos={eggslutofficial:"https://img.loadlogo.com/eggslut.com",mobofficial:"https://img.loadlogo.com/themobmuseum.org",aer:"https://commons.wikimedia.org/wiki/Special:FilePath/Aer_Lingus_logo.svg",cosmo:"https://commons.wikimedia.org/wiki/Special:FilePath/Cosmopolitan_of_Las_Vegas_logo.svg",flamingo:"https://commons.wikimedia.org/wiki/Special:FilePath/FlamingoLogo.svg",innout:"https://commons.wikimedia.org/wiki/Special:FilePath/InNOut_2021_logo.svg",mob:"https://commons.wikimedia.org/wiki/Special:FilePath/The_Mob_Museum_logo.svg",fremont:"https://commons.wikimedia.org/wiki/Special:FilePath/Fremont_Street_Experience_logo.svg",eggslut:"https://commons.wikimedia.org/wiki/Special:FilePath/Eggslut_logo.svg"};
 const sphere="https://commons.wikimedia.org/wiki/Special:FilePath/Sphere_%2853635912877%29.jpg";
 let selected=0;const el=id=>document.getElementById(id);
 function render(){el('days').innerHTML=days.map((d,i)=>'<button aria-selected="'+(i===selected)+'" data-i="'+i+'"><small>'+d[0].split(' ')[0]+'</small><b>'+d[0].split(' ')[1]+'</b></button>').join('');el('heading').textContent=days[selected][0];el('subtitle').textContent=days[selected][1];
